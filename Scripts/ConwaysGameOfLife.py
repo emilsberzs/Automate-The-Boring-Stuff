@@ -1,6 +1,6 @@
 #Conway's Game OF Life
 import random, time, copy
-WIDTH = 6
+WIDTH = 6 
 HEIGHT = 6
 
 #List of list for all cells
