@@ -54,3 +54,19 @@ print('name' in foo.keys())
 print('\nCheck if value in dict: ')
 print('Is "paws" in foo? : ')
 print('paws' in foo.values())
+
+#Get method, first argument-key of the vakue to retrieve, second argument-fallback value.
+print('Value present: ')
+print(foo.get('name', 'no name'))
+
+print('Value not present: ')
+print(foo.get('owner','no owner'))
+
+#Setdefault sets value only if key already doesn't have value. First argument-key, second-value
+foo.setdefault('name','snuffles' )
+print('value present: (name)')
+print(foo.get('name'))
+
+foo.setdefault('owner', 'pete')
+print('Value not present: (owner)')
+print(foo.get('owner','no owner'))
