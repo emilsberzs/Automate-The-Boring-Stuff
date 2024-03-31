@@ -11,22 +11,46 @@ bar = {
         }
 
 #Order doesn't matter
-#print(foo == bar)
+print('\nFoo == Bar')
+print(foo == bar)
 
+#Print values
+print('\nValues:')
+for v in foo.values():
+    print(v)
 
-birthdays = {'Alice':'Apr 1', 'Bob':'Dec 12', 'Carol':'Mar 4'}
+#Print keys
+print('\nKeys:')
+for k in foo.keys():
+    print(k)
 
-while True:
-    print('Enter a name: (leave blank to quit)\n')
-    name = input()
-    if name == '':
-        break
+#Print both, keys and values:
+print('\nKey Value:')
+for k, v in foo.items():
+    print('Key: ' + k + ' Value: ' + v)
+
+#OR
+print('\nItems')
+for i in foo.items():
+    print(i)
+
+#Values as list
+print('\nValues as list: ')
+print(list(foo.values()))
+
+#Keys as list
+print('\nKeys as list:')
+print(list(foo.keys()))
+
+#Items as list
+print('\nItems as list:')
+print(list(foo.items()))
     
-    if name in birthdays:
-        print(birthdays[name] + ' is the birthday of ' + name)
-    else:
-        print('I do not have information for ' + name)
-        print('When is their birthday?')
-        bday = input()
-        birthdays[name] = bday
-        print('Birthday added to database!')
+#Check if value or key in dictionary
+print('\nCheck if key in dict: ')
+print('Is "name" in foo? : ')
+print('name' in foo.keys())
+
+print('\nCheck if value in dict: ')
+print('Is "paws" in foo? : ')
+print('paws' in foo.values())
