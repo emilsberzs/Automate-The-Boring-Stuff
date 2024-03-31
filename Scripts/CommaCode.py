@@ -27,5 +27,5 @@ def comma_code(word_list):
 words = ['cat', 'bat', 'mat','spat']
 
 
-#print(comma_code(words))
+print(comma_code(words))
 print(CommaCode(words))
