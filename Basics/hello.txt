@@ -1,0 +1,5 @@
+Hello World!
+It is just a text file.
+Written over several lines.
+So i can work with it from Python.
+Bazinga!
